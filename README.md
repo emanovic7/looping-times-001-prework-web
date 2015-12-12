@@ -32,18 +32,20 @@ Let's clean those dishes using the `times` method:
   puts "I am doing the dishes left by my former friends."
 end
 
-# => "I am doing the dishes left by my former friends."
-# => "I am doing the dishes left by my former friends."
-# => "I am doing the dishes left by my former friends."
-# => "I am doing the dishes left by my former friends."
-# => "I am doing the dishes left by my former friends."
-# => "I am doing the dishes left by my former friends."
-# => "I am doing the dishes left by my former friends."
+# > "I am doing the dishes left by my former friends."
+# > "I am doing the dishes left by my former friends."
+# > "I am doing the dishes left by my former friends."
+# > "I am doing the dishes left by my former friends."
+# > "I am doing the dishes left by my former friends."
+# > "I am doing the dishes left by my former friends."
+# > "I am doing the dishes left by my former friends."
+
+# => 7 (return value)
 ```
 
 ### Intermediate `times` Example: Crime Spree
 
-Okay, that's fine but all we did was print some text––what if we wanted to change the value of a variable within a loop? Let's see how that works: 
+Okay, that's fine, but all we did was print some text––what if we wanted to change the value of a variable within a loop? Let's see how that works: 
 
 You are a jewel thief who has stolen a hundred (100) very valuable jewels (you are a really good jewel thief). But now you need to unload your stolen jewels from your bag into the safe in your secret hideout!  
 
@@ -55,19 +57,24 @@ jewels_in_bag = 100
   jewels_in_bag = jewels_in_bag - 10
 end
 
+# => 3 (return value)
+
 puts "We have #{jewels_in_bag} jewels still to hide!"
 
 
-# => "Hiding 10 stolen jewels."
-# => "Hiding 10 stolen jewels."
-# => "Hiding 10 stolen jewels."
+# > "Hiding 10 stolen jewels."
+# > "Hiding 10 stolen jewels."
+# > "Hiding 10 stolen jewels."
 
-# => "We have 70 jewels still to hide!"
+# > "We have 70 jewels still to hide!"
+
+# => nil (return value)
+
 ```
 
 #### Advanced `times` Example
 
-This is fun and all but so far we've only printed text within the block of code within the loop. What if we wanted to do something more, say keep track of the number of jewels we are hiding *as we hide them*? 
+This is fun and all, but so far we've only printed text within the block of code within the loop. What if we wanted to do something more, say, keep track of the number of jewels we are hiding *as we hide them*? 
 
 ```ruby
 jewels_in_bag = 100
@@ -77,18 +84,20 @@ jewels_in_bag = 100
   jewels_in_bag = jewels_in_bag - 10
   puts "Now there are only #{jewels_in_bag} jewels left to hide!"
 end
+# => 3 (return value)
 
 puts "We have #{jewels_in_bag} jewels still to hide!"
+# => nil (return value)
 
+# > "Hiding 10 stolen jewels."
+# > "Now there are only 90 jewels left to hide!"
+# > "Hiding 10 stolen jewels."
+# > "Now there are only 80 jewels left to hide!"
+# > "Hiding 10 stolen jewels."
+# > "Now there are only 70 jewels left to hide!"
 
-# => "Hiding 10 stolen jewels."
-# => "Now there are only 90 jewels left to hide!"
-# => "Hiding 10 stolen jewels."
-# => "Now there are only 80 jewels left to hide!"
-# => "Hiding 10 stolen jewels."
-# => "Now there are only 70 jewels left to hide!"
+# > "We have 70 jewels still to hide!"
 
-# => "We have 70 jewels still to hide!"
 ```
 
 ## Using the `times` method
